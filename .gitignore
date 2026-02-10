@@ -1,0 +1,11 @@
+# AI
+AGENTS.md
+
+# Temporal Files
+tmp/
+
+# Builds
+target/
+
+# Jujutsu
+.jj
