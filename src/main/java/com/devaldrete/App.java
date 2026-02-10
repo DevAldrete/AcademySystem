@@ -22,7 +22,6 @@ public class App {
   private Long nextProfesorId = 100L;
 
   public App() {
-    // Initialize sample data
     List<Alumno> alumnos = new ArrayList<>();
     alumnos.add(new Alumno(1L, "Juan Garcia", 20, 1L));
     alumnos.add(new Alumno(2L, "Maria Lopez", 22, 1L));
@@ -45,7 +44,6 @@ public class App {
 
     this.cursoRepository = new CursoRepository(cursos, alumnoRepository);
 
-    // Initialize sample professors
     List<Profesor> profesores = new ArrayList<>();
     profesores.add(new Profesor(1L, "Dr. Roberto Sanchez", 250.0, 1L)); // Matematicas
     profesores.add(new Profesor(2L, "Dra. Ana Martinez", 280.0, 2L)); // Fisica
@@ -97,7 +95,7 @@ public class App {
     IO.println("0. Salir");
   }
 
-  // ==================== ALUMNOS ====================
+  // ALUMNOS
 
   private void menuAlumnos() {
     boolean inMenu = true;
@@ -245,7 +243,7 @@ public class App {
     }
   }
 
-  // ==================== CURSOS ====================
+  // CURSOS
 
   private void menuCursos() {
     boolean inMenu = true;
@@ -346,7 +344,7 @@ public class App {
     }
   }
 
-  // ==================== MATERIAS ====================
+  // MATERIAS
 
   private void menuMaterias() {
     boolean inMenu = true;
@@ -424,7 +422,7 @@ public class App {
     }
   }
 
-  // ==================== PROFESORES ====================
+  // PROFESORES
 
   private void menuProfesores() {
     boolean inMenu = true;
